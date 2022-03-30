@@ -1,7 +1,5 @@
 import Banner from "./components/Banner";
 
-import "./styles.css";
-
 const icon = (
   <svg
     role="img"
