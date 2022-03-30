@@ -1,0 +1,23 @@
+{
+  "data": {
+    "ddcEmbedCollection": {
+      "items": [
+        {
+          "title": "Generic Top Banner",
+          "titleLabel": "Generic Top Banner",
+          "subtitle": "Generic top banner to be used for different top banner",
+          "topBanner": {
+            "imageMobile": {
+              "title": "ddc-top-banner-mobile",
+              "url": "https://images.ctfassets.net/olgn490fyv7t/2AlaIfkW08D9LSQcw5VUAx/3b80147486d088febe3e18cdc04a1e82/IMG_DDC_mobile_960_large.png"
+            },
+            "imageDesktop": {
+              "title": "ddc-top-banner-desktop",
+              "url": "https://images.ctfassets.net/olgn490fyv7t/64DJ2SK7q4b1DJdMP6F4k1/2d518da04b1bedebc51337ae16c0bbca/rectangle.png"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
