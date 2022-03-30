@@ -4,6 +4,14 @@ import DDC from "../../../assets/ddc.png";
 
 import styled from "styled-components";
 
+/*
+ * BannerImg component
+ * DDC - path to banner image
+ */
+const BannerImg = () => {
+  return <Image src={DDC} />;
+};
+
 const Image = styled.img`
   width: 100%;
   height: 100%;
@@ -18,9 +26,5 @@ const Image = styled.img`
     margin: 2% 2% 0 2%;
   }
 `;
-
-const BannerImg = () => {
-  return <Image src={DDC} />;
-};
 
 export default BannerImg;

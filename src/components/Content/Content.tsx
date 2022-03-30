@@ -1,6 +1,22 @@
 import React from "react";
 
 import styled from "styled-components";
+/*
+ * Content component
+ * icon - ReactNode (Cake svg icon)
+ * title - string (main text of the banner)
+ * subtitle - string (located below title and brief text)
+ */
+const Content = (props) => {
+  const { icon, title, subtitle } = props;
+  return (
+    <StyleWrapper>
+      <Icon>{icon}</Icon>
+      <Title>{title}</Title>
+      <Subtitle>{subtitle}</Subtitle>
+    </StyleWrapper>
+  );
+};
 
 const StyleWrapper = styled.div`
   position: relative;
@@ -10,7 +26,7 @@ const StyleWrapper = styled.div`
 `;
 
 const Title = styled.span`
-  font-size: 2rem;
+  font-size: 32px;
   display: block;
   line-height: 1;
   right: 2px;
@@ -19,7 +35,7 @@ const Title = styled.span`
   font-family: "Dancing Script", cursive;
   padding: 17px 30px 0 30px;
   @media (max-width: 425px) {
-    font-size: 1.2rem;
+    font-size: 19.2px;
   }
 
   @media (min-width: 426px) and (max-width: 768px) {
@@ -27,7 +43,7 @@ const Title = styled.span`
   }
 
   @media (min-width: 769px) and (max-width: 1024px) {
-    font-size: 1.5rem;
+    font-size: 24px;
     margin-top: 30%;
   }
 
@@ -47,11 +63,11 @@ const Subtitle = styled.p`
   color: #00b1a8;
   font-family: "Harmonia Sans Std Regular", Arial, sans-serif;
   @media (max-width: 425px) {
-    font-size: 0.6rem;
+    font-size: 9.6px;
   }
 
   @media (min-width: 426px) and (max-width: 768px) {
-    font-size: 0.8em;
+    font-size: 12.8px;
   }
 
   @media (min-width: 769px) {
@@ -88,16 +104,5 @@ const Icon = styled.div`
     }
   }
 `;
-
-const Content = (props) => {
-  const { icon, title, subtitle } = props;
-  return (
-    <StyleWrapper>
-      <Icon>{icon}</Icon>
-      <Title>{title}</Title>
-      <Subtitle>{subtitle}</Subtitle>
-    </StyleWrapper>
-  );
-};
 
 export default Content;

@@ -5,6 +5,27 @@ import Content from "../Content";
 
 import styled from "styled-components";
 
+interface BannerPropsType {
+  title: string;
+  subtitle?: string;
+  icon?: ReactNode;
+}
+
+/*
+ * Banner component
+ * title - string(mandatory)
+ * subtitle - string(optional)
+ * icon - ReactNode(optional)
+ */
+const Banner = ({ title, subtitle, icon }: BannerPropsType) => {
+  return (
+    <StyleWrapper>
+      <BannerImg />
+      <Content icon={icon} title={title} subtitle={subtitle} />
+    </StyleWrapper>
+  );
+};
+
 const StyleWrapper = styled.div`
   display: grid;
   grid-template-columns: 65% 35%;
@@ -19,20 +40,5 @@ const StyleWrapper = styled.div`
     grid-template-columns: 100%;
   }
 `;
-
-interface BannerPropsType {
-  title: string;
-  subtitle?: string;
-  icon?: ReactNode;
-}
-
-const Banner = ({ title, subtitle, icon }: BannerPropsType) => {
-  return (
-    <StyleWrapper>
-      <BannerImg />
-      <Content icon={icon} title={title} subtitle={subtitle} />
-    </StyleWrapper>
-  );
-};
 
 export default Banner;
