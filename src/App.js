@@ -1,4 +1,9 @@
-import Banner from "./components/Banner";
+import BannerImg from "./components/BannerImg";
+import Content from "./components/Content";
+
+import styled from "styled-components";
+
+import "./styles.css";
 
 const icon = (
   <svg
@@ -37,5 +42,27 @@ const data = {
  */
 
 export default function App() {
-  return <Banner {...data} />;
+  return (
+    <div className="app">
+      <StyleWrapper>
+        <BannerImg />
+        <Content {...data} />
+      </StyleWrapper>
+    </div>
+  );
 }
+
+const StyleWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  @media (min-width: 1024px) {
+    width: 800px;
+    height: 300px;
+    flex-direction: row;
+  }
+`;

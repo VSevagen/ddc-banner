@@ -4,10 +4,6 @@ import DDC from "../../../assets/ddc.png";
 
 import styled from "styled-components";
 
-/*
- * BannerImg component
- * DDC - path to banner image
- */
 const BannerImg = () => {
   return <Image src={DDC} />;
 };
@@ -19,11 +15,14 @@ const Image = styled.img`
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 
-  @media (min-width: 320px) and (max-width: 768px) {
+  @media (min-width: 320px) and (max-width: 992px) {
     border-top-right-radius: 10px;
     border-bottom-left-radius: 0;
-    width: 96%;
-    margin: 2% 2% 0 2%;
+  }
+
+  @media (min-width: 1024px) {
+    width: 550px;
+    height: 300px;
   }
 `;
 
