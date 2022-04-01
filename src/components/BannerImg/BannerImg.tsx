@@ -4,6 +4,10 @@ import DDC from "../../../assets/ddc.png";
 
 import styled from "styled-components";
 
+/*
+ * BannerImg component
+ * DDC - path to banner image
+ */
 const BannerImg = () => {
   return <Image src={DDC} />;
 };

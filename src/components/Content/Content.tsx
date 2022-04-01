@@ -2,6 +2,12 @@ import React from "react";
 
 import styled from "styled-components";
 
+/*
+ * Content component
+ * icon - ReactNode (containes cake svg)
+ * title - string (Banner title)
+ * subtitle - string (Banner subtitle)
+ */
 const Content = (props) => {
   const { icon, title, subtitle } = props;
   return (
